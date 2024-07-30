@@ -1,0 +1,84 @@
+KPL => Kazakh Programming Language
+
+19 Jul 2024 07:00
+
+Yerzh 
+So this is my pet progect which I am tring to make work in order to learn go a bit more in depth and at the same time creating something I have not seen a lot (never seen personally).
+It might not be only my pet progect cuz if I want to really finish it it is ton of work (Migh collaborate with Darkhan :)
+
+Goal: Is  to get better at go and mb create a language which will understand Kazakh (types, loops, arrays, etc) 
+
+Syntax
+Special symbols : '=', '+', '-', '.', '/', ','
+Types:
+    мәтін => String
+    бүтін_сан => digit(int)
+    сан => float
+    белгісіз => any
+    зат => object 
+    ештеңе => null
+    қасиет => function (yeah I am aware that it is not the right translation but... 
+                        imagine objects function being used like "string_obj.upper_case()" 
+                        and translation is like "менің_затым затының қасиетін шақырамыз"=="we call a function of менің_затым object" ) 
+
+жаз => print()
+
+Usage:  variable name first and then type and the value itsef
+    Variable Declorations :
+        менің_мәтінім мәтін = "bla bla bla" 
+        менің_саным сан = 15 | also valid > менің_саным сан = 15.25
+        менің_бүтін_саным бүтін_сан = 45
+        білмеймін белгісіз = ештеңе 
+        note:  мәтін and сан and бүтін_сан can not be ештеңе !
+         basically : айнымалы түрі = ... 
+        
+    Object creation:
+        жаңа_зат зат {
+            жаңа_зат_анықтамасы мәтін,
+            жаңа_зат_бірдеңесі_1 сан,
+            жаңа_зат_бірдеңесі_2 бүтін_сан,
+        }
+    
+    Object usage:
+         жаңа_затым жаңа_зат = {
+            жаңа_зат_анықтамасы = "bla bla bla",
+            жаңа_зат_бірдеңесі_1 = 3.14,
+            жаңа_зат_бірдеңесі_2 = 69,
+         }
+         
+    Functions/Methods : 
+        
+        Function Declorations:
+            мен_қолданатын_қасиет қасиет(){
+                // солайда солай 
+            }
+            
+            мен_қолданатын_қасиет қасиет(бірдеңе белгісіз){
+                жаз(бірдеңе)
+                // солайда солай 
+            }
+            мен_қолданатын_қасиет қасиет(с сан, м мәтін){
+                жаз(c+" "+m)  // => "5 hello"
+                // солайда солай 
+            }
+        
+        Method Declorations
+            жаңа_зат жазып_беруші қасиет(){
+                
+                жаз(жаңа_зат.жаңа_зат_бірдеңесі_1+" "+жаңа_зат.жаңа_зат_бірдеңесі_2)
+                
+                // солайда солай 
+            }
+            
+            жаңа_затым.жазып_беруші()
+
+            жаңа_зат бірдеңе_істе қасиет(с сан, м мәтін){
+                
+                жаңа_зат.жаңа_зат_бірдеңесі_1 = с
+                жаңа_зат.жаңа_зат_анықтамасы = м
+                
+                // солайда солай 
+            }
+            жаңа_затым.бірдеңе_істе(3.14,"bla bla bla") 
+             
+    
